@@ -1,0 +1,30 @@
+[global_config]
+  focus = system
+  title_inactive_bg_color = "#eeeeec"
+  title_transmit_bg_color = "#204a87"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_color = "#ffffff"
+    background_darkness = 0.6
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Hack 11
+    foreground_color = "#000000"
+    icon_bell = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+    use_theme_colors = True
+    visible_bell = True
