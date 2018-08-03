@@ -1,4 +1,4 @@
-##Requirements of dotfiles
+## Requirements of dotfiles
 
 1. install i3-gaps / dependencies (from  latest release)
 2. clone dotfiles from github
