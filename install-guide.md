@@ -1,4 +1,5 @@
 ##Requirements of dotfiles
+
 1: install i3-gaps / dependencies (from  latest release)
 2: clone dotfiles from github
 3: install: vim, chromium-browser, terminator, lxappearance, arc-theme, spotify, playerctl
