@@ -124,7 +124,7 @@ fi
 function install_animcogn_recommended {
 	#install animcogn recommended
 	echo "installing recommended..."
-	sudo apt install chromium-browser terminator
+	sudo apt install chromium-browser terminator vim
 	sudo snap install spotify
 }
 
@@ -135,7 +135,7 @@ elif [ "$DO_INSTALL_ANIMCOGN_RECOMMENDED" == "FALSE" ] ; then
 	echo "skipping the animcogn recommended..."
 elif [ "$DO_INSTALL_ANIMCOGN_RECOMMENDED" == "PROMPT" ] ; then
 	while true; do
-		read -p "install animcogn's recommends? (chromium, terminator, spotify) [Y/n]" yn
+		read -p "install animcogn's recommends? (chromium, terminator, spotify, vim) [Y/n]" yn
 		case $yn in
 			[Nn]* ) break;;
 			* ) install_animcogn_recommended; break;;
