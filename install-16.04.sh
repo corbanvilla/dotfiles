@@ -48,8 +48,9 @@ fi
 if [ "$DO_DEPENDENCY_INSTALLS" == "TRUE" ] ; then
 	echo "downloading i3-gaps dependencies..."
 	sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev 
-  	sudo apt install curl autoconf
-  
+  	#different from 18.04 install
+	sudo apt install curl autoconf
+ 	#add libxcb ppa
   	sudo add-apt-repository ppa:aguignard/ppa
   	sudo apt-get update
   	sudo apt-get install libxcb-xrm-dev
@@ -108,7 +109,13 @@ fi
 
 function install_i3_recommended {
 	echo "installing recommended..."
-	sudo apt install i3blocks i3lock feh compton fonts-font-awesome fonts-hack rofi scrot pavucontrol lxappearance arc-theme
+	sudo apt install i3blocks i3lock feh compton fonts-font-awesome rofi scrot pavucontrol lxappearance
+	#different from 18.04
+	sudo apt install fonts-hack-ttf
+	#add ppa
+	sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/home:Horst3180.list"
+	sudo apt-get update
+	sudo apt-get install arc-theme
 }
 
 #install i3 recommended
