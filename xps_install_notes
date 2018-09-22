@@ -1,0 +1,7 @@
+add drivers ppa
+
+version: 390
+kernel: 4.15.0-20-generic
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
